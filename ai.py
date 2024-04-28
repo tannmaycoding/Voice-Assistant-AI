@@ -131,7 +131,7 @@ if __name__ == "__main__":
             webbrowser.open("stackoverflow.com")
 
         elif 'play music' in query:
-            music_dir = 'D\\Tannmay2\\gallery\\8audio'
+            music_dir = 'your-music-folder'
             songs = random.choice(os.listdir(music_dir))
             print(songs)
             os.startfile(os.path.join(music_dir, songs))
@@ -146,9 +146,9 @@ if __name__ == "__main__":
 
         elif 'email' in query:
             try:
-                email_sender = 'tannmayg2011@gmail.com'
-                sender_password = 'Anipaiawawagfshk'
-                email_receiver = 'meenakshigupta2003@gmail.com'
+                email_sender = 'senders-email-address'
+                sender_password = 'senders-password'
+                email_receiver = 'recievers-email-addreaa'
                 speak("Please tell the subject")
                 subject = takeCommand()
                 speak("What is the content?")
